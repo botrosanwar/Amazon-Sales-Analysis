@@ -16,7 +16,7 @@ This project analyzes **1,000+ Amazon product listings** to uncover pricing stra
 2. **Vectorized Feature Engineering (NumPy):**
    - **`discount_amount`**: Derived total nominal consumer savings ($\text{Actual} - \text{Discounted}$).
    - **`price_per_rating`**: Evaluated cost relative to product quality rating.
-   - **`rating_tier`**: Classified products into performance brackets (`Exceptional`, `Good`, `Average`, `Low`) via fast C-compiled `np.select()` conditional mapping.
+   - **`rating_tier`**: Classified products into performance brackets (`Excellent`, `Good`, `Average`, `Low`) via fast C-compiled `np.select()` conditional mapping.
 
 3. **Exploratory Data Analysis For Business Insights:**
    - Using Pandas aggregations and Numpy statistical methods to answer some core business questions.
@@ -27,7 +27,7 @@ This project analyzes **1,000+ Amazon product listings** to uncover pricing stra
 ## 📊 Key Business Insights
 
 - **Discounts Do Not Drive Ratings:** Correlation analysis revealed a **near-zero correlation** ($r \approx 0.02$) between discount percentage and product rating. High discounts do not compensate for subpar product quality.
-- **Algorithm Bias Toward High Ratings:** Over **80% of top-performing items** fall within the `Good` (4.0–4.4) or `Exceptional` (4.5+) performance tiers, demonstrating Amazon's search algorithm prioritization of highly rated listings.
+- **Algorithm Bias Toward High Ratings:** Over **80% of top-performing items** fall within the `Good` (4.0–4.4) or `Excellent` (4.5+) performance tiers, demonstrating Amazon's search algorithm prioritization of highly rated listings.
 - **Category Dominance:** Electronics and Accessories dominate product volume and review engagement, maintaining consistent rating medians despite aggressive pricing cuts.
 
 ---
